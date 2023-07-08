@@ -1222,7 +1222,7 @@ body.layout2 {
 
 
 .qck-sec {
-  background-image: url(../images/assets/bg1.jpg);
+  
   background-repeat: no-repeat;
   background-size: cover;
   padding: 130px 0;
@@ -1573,19 +1573,17 @@ body.layout2 {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.bg2 {
-  background-image: url(../images/assets/bg2.jpg);
-}
+
 .bg3 {
-  background-image: url(../images/assets/bg3.jpg);
+  
   background-attachment: inherit;
 }
 .bg4 {
-  background-image: url(../images/assets/bg4.jpg);
+ 
   background-attachment: inherit;
 }
 .bg5 {
-  background-image: url(../images/assets/bg5.jpg);
+ 
   background-attachment: inherit;
 }
 
