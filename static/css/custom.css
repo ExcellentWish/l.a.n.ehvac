@@ -1221,7 +1221,7 @@ body.layout2 {
 
 
 .qck-sec {
-  background-image: url(../images/resources/bg1.jpg);
+  background-image: url(../images/assets/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 130px 0;
@@ -1613,52 +1613,19 @@ body.layout2 {
   background-attachment: fixed;
 }
 .bg2 {
-  background-image: url(../images/resources/bg2.jpg);
+  background-image: url(../images/assets/bg2.jpg);
 }
 .bg3 {
-  background-image: url(../images/resources/bg3.jpg);
+  background-image: url(../images/assets/bg3.jpg);
   background-attachment: inherit;
 }
 .bg4 {
-  background-image: url(../images/resources/bg4.jpg);
+  background-image: url(../images/assets/bg4.jpg);
   background-attachment: inherit;
 }
 .bg5 {
-  background-image: url(../images/resources/bg5.jpg);
+  background-image: url(../images/assets/bg5.jpg);
   background-attachment: inherit;
-}
-.bg6 {
-  background-image: url(../images/resources/bg6.jpg);
-  background-attachment: inherit;
-}
-.bg7 {
-  background-image: url(../images/resources/bg7.jpg);
-  background-attachment: inherit;
-}
-.bg8 {
-  background-image: url(../images/resources/bg8.jpg);
-  background-attachment: inherit;
-}
-.bg9 {
-  background-image: url(../images/resources/bg9.jpg);
-  background-attachment: inherit;
-}
-.bg10 {
-  background-image: url(../images/resources/bg10.jpg);
-  background-attachment: inherit;
-}
-
-
-.bg8:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(95,105,116,0.60);
-  opacity: 0;
-  visibility: hidden;
 }
 
 
