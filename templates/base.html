@@ -44,7 +44,7 @@
 	</div>preloader end -->
 
 	<header>
-		<div class="top_header">
+		<div class="top_header" id="top_header">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-4 col-md-4 contc">
@@ -98,7 +98,7 @@
 					</div>
 					<div class="col-lg-4 col-md-5">
 						<div class="logo">
-							<a href="index.html" title=""><img src="{% static 'images/lanelogo.png' %}" alt=""></a>
+							<a href="#top_header" title=""><img src="{% static 'images/lanelogo.png' %}" alt=""></a>
 						</div>
 						<!--logo end-->
 					</div>
@@ -151,13 +151,12 @@
 			<div class="container">
 				<nav>
 					<ul>
-						<li><a href="index.html" title="">HOME</a></li>
+						<li><a href="#top_header" title="">HOME</a></li>
 
 						<li><a href="#service" title="services">Services</a></li>
-
-						</li>
 						<li><a href="#faq" title="faq">faqs</a></li>
-						<li><a href="contact_page.html" title="">contact us</a></li>
+						<li><a href="#financing" title="">Finance</a></li>
+						<li><a href="#contact_us" title="">contact us</a></li>
 
 
 					</ul>
@@ -171,7 +170,7 @@
 	<div class="responsive-header">
 		<div class="container">
 			<div class="responsive_hd_logo">
-				<a href="index.html" title="">
+				<a href="#top_header" title="home">
 					<img src="{% static 'images/lanelogo.png' %}" alt="">
 				</a>
 			</div>
@@ -182,7 +181,7 @@
 						<li><a href="#service" title="">services</a></li>
 						<li><a href="#faq" title="">faqs</a></li>
 						<li><a href="#financing" title="">Finance</a></li>
-						<li><a href="contact_page.html" title="">Contact us</a></li>
+						<li><a href="#contact_us" title="">Contact us</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -216,31 +215,8 @@
 	</div>
 	<!--responsive-header end-->
 
-	<div class="responsive-menu">
-		<a href="#" title="" class="close-mobile-menu"><img src="{% static 'images/close.png' %}"
-				alt="close symbol"></a>
-		<ul>
-			<li><a href="index.html" title="">HOME</a></li>
-			<li><a href="about_page.html" title="">About us</a></li>
-			<li><a href="#" title="">Services</a>
-				<ul>
-					<li><a href="services_page.html" title="">Services</a></li>
-					<li><a href="services_single.html" title="">Services Single</a></li>
-				</ul>
-			</li>
-			<li><a href="price_page.html" title="">Prices</a></li>
-			<li><a href="gallery_page.html" title="">Gallery</a></li>
-			<li><a href="#" title="">blog</a>
-				<ul>
-					<li><a href="blog_posts_page.html" title="">Blog</a></li>
-					<li><a href="blog_single_post_page.html" title="">Blog Single</a></li>
-				</ul>
-			</li>
-			<li><a href="faqs_page.html" title="">faqs</a></li>
-			<li><a href="contact_page.html" title="">contact us</a></li>
-		</ul>
-	</div>
-	<!--responsive-menu end-->
+	
+	
 
 
 	<div class="banner-section">
@@ -1248,7 +1224,7 @@
 
 
 
-	<section class="block sap-sec air_sec">
+	<section class="block sap-sec air_sec" id="contact_us">
 		<div class="fixed-bg bg4"></div>
 		<div class="container">
 			<div class="sep-text">
