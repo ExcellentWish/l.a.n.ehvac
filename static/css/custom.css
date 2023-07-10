@@ -1145,7 +1145,7 @@ body.layout2 {
 }
 .fgt-logo {
   position: absolute;
-  bottom: 28px;
+  bottom: 40px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -1154,6 +1154,10 @@ body.layout2 {
   transform: translateX(-50%);
 }
 
+.fgt-logo img{
+  width: 150px;
+  height: 115px;
+}
 
 
 .layout2 section {
@@ -2417,6 +2421,8 @@ footer {
   padding: 70px 0 67px;
 }
 .widget-about img {
+  width: 250px;
+  height: 170px;
   margin: -2px 0 35px;
 }
 .widget-about > p {
