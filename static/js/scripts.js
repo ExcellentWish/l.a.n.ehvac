@@ -1,7 +1,7 @@
 $(window).on("load", function() {
     "use strict";
 
-
+	$('.preloader').fadeOut("slow","linear")
 	// ======================== ACCORDION FAQs TABS ========================
 
 	$(".toggle").each(function(){
@@ -146,7 +146,7 @@ $(window).on("load", function() {
         $(this).next("ul").slideToggle().parent().siblings().find("ul").slideUp();
     });
 
-
+	
 
 });
 
