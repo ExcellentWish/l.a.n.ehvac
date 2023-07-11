@@ -6,17 +6,14 @@ from .forms import ContactForm
 
 # Create your views here.
 
-
-# Create your views here.
-
 def index(request):
     # Return homepage
     return render(request, 'base.html')
 
 
-def error_404(request, exception):
+def handler404(request, exception):
     return render(request, '404.html', status=404)
 
 
-def error_500(request):
+def handler500(request):
     return render(request, '500.html', status=500)
