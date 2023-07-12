@@ -8,23 +8,28 @@ from .forms import ContactForm
 # Create your views here.
 
 def index(request):
-    # Return homepage
-    return render(request, 'base.html')
-
-def contact(request):
-    submitted = False
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
-            assert False
-            return HttpResponseRedirect('base.html')
+
+            # Send an email using the send_mail() function
+            send_mail(
+                'Question Form Submission',
+                f'Name: {cd["name"]}\nEmail: {cd["email"]}\nMessage: {cd["message"]}',
+                settings.DEFAULT_FROM_EMAIL,
+                [settings.DEFAULT_FROM_EMAIL],
+                fail_silently=False,
+            )
+
+            # Set submitted to True to display success message
+            submitted = True
     else:
         form = ContactForm()
-        if 'submitted' in request.GET:
-            submitted = True
+        submitted = False
 
-    return render(request, 'base.html', {'form':form, 'submitted':submitted})
+    return render(request, 'base.html', {'form': form, 'submitted': submitted})
+
 
 def handler404(request, exception):
     return render(request, '404.html', status=404)

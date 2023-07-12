@@ -6,5 +6,4 @@ from django.conf.urls import include, url
 
 urlpatterns = [
     path('', views.index, name='base'),
-    path('contact/', contact_form, name='contact'),    
 ]
