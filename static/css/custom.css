@@ -1107,6 +1107,7 @@ body.layout2 {
 .banner-slide {
   position: relative;
 }
+
 .fig_text {
   background-color: rgba(51,51,51,0.90);
   padding: 24px 0 20px;
@@ -2250,10 +2251,10 @@ body.layout2 {
 
 
 .testimonial > h4 {
-  color: #888888;
+  color: #555;
   font-size: 16px;
   margin: 0 0 22px;
-  letter-spacing: 1.8px;
+  letter-spacing: 1.5px;
   font-weight: 400;
 }
 .testimonial > h3 {
@@ -2269,7 +2270,7 @@ body.layout2 {
 
 .testi_slide {
   position: relative;
-  padding: 0 10px 0 56px;
+  padding: 0 10px 0 50px;
 }
 .testi_slide:before {
   content: '\f10d';
@@ -2281,20 +2282,20 @@ body.layout2 {
   font-family: fontawesome;
 }
 .testi_slide > p {
-  color: #555555;
+  color: #000;
   font-size: 18px;
   line-height: 30px;
   margin: 0 0 23px;
 }
 .testi_slide > h4 {
-  color: #888888;
-  font-size: 14px;
+  color: #555;
+  font-size: 12px;
   font-weight: 400;
   margin: 0;
 }
 .testi_slide > h4 strong {
   font-weight: 700;
-  color:#555555;
+  color:#000;
 }
 
 .testi_carousel .slick-dots {
@@ -2418,7 +2419,7 @@ input[type="submit"]:focus{
 
 footer {
   background-color: #515151;
-  padding: 70px 0 67px;
+  padding: 25px 0 0px;
 }
 .widget-about img {
   width: 250px;
