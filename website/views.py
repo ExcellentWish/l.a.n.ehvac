@@ -1,29 +1,34 @@
 from django.shortcuts import render
 from django.conf import settings
 from django.views import View
+from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.core.mail import send_mail
 from .forms import ContactForm
 
 # Create your views here.
 
+
 def index(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
+            customer_name = form.cleaned_data['name']
+            email_from = form.cleaned_data['email']
+            subject = (f'Questions from {customer_name}, from website {email_from}')
+            message = form.cleaned_data['message']
+            recipient_list = [settings.EMAIL_HOST_USER]
             cd = form.cleaned_data
 
             # Send an email using the send_mail() function
-            send_mail(
-                'Question Form Submission',
-                f'Name: {cd["name"]}\nEmail: {cd["email"]}\nMessage: {cd["message"]}',
-                settings.DEFAULT_FROM_EMAIL,
-                [settings.DEFAULT_FROM_EMAIL],
-                fail_silently=False,
-            )
-
-            # Set submitted to True to display success message
+            send_mail(subject, message, email_from, recipient_list)
+        # Set submitted to True to display success message
             submitted = True
+            messages.add_message(
+                request, messages.SUCCESS,
+                "Thank you for contacting us, one of our staff will be in "
+                "touch shortly.")
+
     else:
         form = ContactForm()
         submitted = False

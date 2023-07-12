@@ -647,7 +647,7 @@
 
 				<div class="srvs_dv">
 					<img src="{% static 'images/assets/simg4.jpg' %}" alt="">
-					<h2 class="srvs_heading">Thermostats Installation</h2>
+					<h2 class="srvs_heading">Thermostat Installation</h2>
 				</div>
 
 				<div class="srvs_dv">
@@ -937,25 +937,28 @@
 					<div class="col-lg-6 col-md-6">
 						<div class="question_sec">
 							<h3 class="sc-title">Ask <span>Question</span></h3>
-							<form id="contactform" name="contactform" method="POST" >
+							<form id="contactform" name="contactform" method="POST">
 								{% if submitted %}
+								{% for message in messages %}
+								<p {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</p>
+								{% endfor %}
 								<div id="success">
 									<p>Your message was sent successfully!</p>
 								</div>
 								{% else %}
-								
+
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-sm-6">
 										<div class="input_field">
-											<p><label for="id_name">Your name:</label> <input type="text" name="name" maxlength="50"
-												required id="id_name"></p>
+											<p><label for="id_name">Your name:</label> <input type="text" name="name"
+													maxlength="50" required id="id_name"></p>
 										</div>
 										<!--input_field end-->
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-6">
 										<div class="input_field">
-											<p><label for="id_email">Your email:</label> <input type="email" name="email"
-												maxlength="320" required id="id_email"></p>
+											<p><label for="id_email">Your email:</label> <input type="email"
+													name="email" maxlength="320" required id="id_email"></p>
 										</div>
 										<!--input_field end-->
 									</div>
@@ -967,9 +970,9 @@
 									</div>
 									<div class="col-lg-12">
 										<div class="input_field">
-											<p><label for="id_message">Your Question:</label> <textarea name="message" cols="40" rows="10"
-												required id="id_message"></textarea></p>
-		
+											<p><label for="id_message">Your Question:</label> <textarea name="message"
+													cols="40" rows="10" required id="id_message"></textarea></p>
+
 										</div>
 										<!--input_field end-->
 									</div>
