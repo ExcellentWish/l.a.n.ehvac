@@ -60,7 +60,7 @@ SITE_ID = 1
 
 # SMTP email settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.example.com'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'nigel.doheny93@gmail.com'
 EMAIL_HOST_PASSWORD = 'your-email-password'
