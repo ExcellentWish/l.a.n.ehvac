@@ -16,7 +16,7 @@ def index(request):
         if form.is_valid():
             customer_name = form.cleaned_data['name']
             email_from = form.cleaned_data['email']
-            subject = (f'Questions from {customer_name}, from website {email_from}')
+            subject = (f'Questions from {customer_name}, from website, email: {email_from}')
             message = form.cleaned_data['message']
             recipient_list = [settings.EMAIL_HOST_USER]
             cd = form.cleaned_data
@@ -30,9 +30,9 @@ def index(request):
                 "Thank you for contacting us, one of our staff will be in "
                 "touch shortly.")
 
-    else:
-        form = ContactForm()
-        submitted = False
+        else:
+            form = ContactForm()
+            submitted = False
 
     return render(request, 'index.html', {'form': form, 'submitted': submitted})
 

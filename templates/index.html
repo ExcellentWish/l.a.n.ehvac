@@ -719,6 +719,7 @@
 						<div class="question_sec">
 							<h3 class="sc-title">Ask <span>Question</span></h3>
 							<form id="contactform" name="contactform" method="POST">
+                                
 								{% if submitted %}
 								{% for message in messages %}
 								<p {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</p>
@@ -727,7 +728,7 @@
 									<p>Your message was sent successfully!</p>
 								</div>
 								{% else %}
-
+                                {% csrf_token %} 
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-sm-6">
 										<div class="input_field">
