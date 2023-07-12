@@ -29,7 +29,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 X_FRAME_OPTIONS = "SAMEORIGIN"
 
 ALLOWED_HOSTS = ['8000-excellentwish-lanehvac-1wywrgpgbic.ws-eu101.gitpod.io', 'lanehvac-41c8d4a6b4f7.herokuapp.com']
@@ -59,15 +59,15 @@ SITE_ID = 1
 # EMAIL_PORT = 587
 
 # SMTP email settings
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'nigel.doheny93@gmail.com'
-EMAIL_HOST_PASSWORD = 'your-email-password'
-EMAIL_USE_TLS = True
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'nigel.doheny93@gmail.com'
+# EMAIL_HOST_PASSWORD = 'your-email-password'
+# EMAIL_USE_TLS = True
 
-# Default email address
-DEFAULT_FROM_EMAIL = 'nigel.doheny93@gmail.com'
+# # Default email address
+# DEFAULT_FROM_EMAIL = 'nigel.doheny93@gmail.com'
 
 # message settings
 MESSAGE_TAGS = {
