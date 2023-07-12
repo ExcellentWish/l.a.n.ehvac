@@ -5,10 +5,11 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.core.mail import send_mail
 from .forms import ContactForm
+from django.views.decorators.csrf import csrf_protect
 
 # Create your views here.
 
-
+@csrf_protect
 def index(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -33,7 +34,7 @@ def index(request):
         form = ContactForm()
         submitted = False
 
-    return render(request, 'base.html', {'form': form, 'submitted': submitted})
+    return render(request, 'index.html', {'form': form, 'submitted': submitted})
 
 
 def handler404(request, exception):
