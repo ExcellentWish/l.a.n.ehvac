@@ -11,7 +11,6 @@ from .forms import ContactForm
 
 
 def index(request):
-    form = ContactForm()
     submitted = False
     if request.method == 'POST':
         form = ContactForm(request.POST)

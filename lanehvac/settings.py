@@ -60,11 +60,8 @@ EMAIL_PORT = 587
 
 # SMTP email settings
 
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER ')
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-
-# # Default email address
-DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
 
 # message settings
 MESSAGE_TAGS = {
