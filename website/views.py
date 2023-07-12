@@ -25,16 +25,16 @@ def index(request):
 
             # Send an email using the send_mail() function
             send_mail(subject, message, email_from, recipient_list)
-        # Set submitted to True to display success message
+            # Set submitted to True to display success message
             submitted = True
             messages.add_message(
                 request, messages.SUCCESS,
                 "Thank you for contacting us, one of our staff will be in "
                 "touch shortly.")
 
-        else:
-            form = ContactForm()
-            submitted = False
+    else:
+        form = ContactForm()
+        submitted = False
 
     return render(request, 'index.html', {'form': form, 'submitted': submitted})
 
