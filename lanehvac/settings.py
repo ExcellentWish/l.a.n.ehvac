@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 X_FRAME_OPTIONS = "SAMEORIGIN"
 
-ALLOWED_HOSTS = ['8000-excellentwish-lanehvac-1wywrgpgbic.ws-eu101.gitpod.io', 'lanehvac-41c8d4a6b4f7.herokuapp.com', 'www.lanehvacmechanical.com' ,'lanehvacmechanical.com']
+ALLOWED_HOSTS = ['8000-excellentwish-lanehvac-1wywrgpgbic.ws-eu101.gitpod.io', 'lanehvac-41c8d4a6b4f7.herokuapp.com', 'www.lanehvacmechanical.com', 'lanehvacmechanical.com']
 
 
 # Application definition
@@ -156,6 +156,16 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR,'static'),]
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+#https
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = True
+
+# HSTS settings
+SECURE_HSTS_SECONDS = 31536000
+SECURE_HSTS_PRELOAD = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
