@@ -680,7 +680,7 @@
 	.layout2 .blog_carousel .slick-dots {bottom: 6px;margin-bottom: 0;}
 	.blog-posts {margin-bottom: -17px;}
 	.air_sec .sep-text > h2 {max-width: 470px;font-size: 26px;line-height: 34px;}
-	.layout2 .block.sap-sec.air_sec {padding: 65px 0 60px;}
+	.layout2 .block.sap-sec.air_sec {background-color: #faf6f7;padding: 65px 0 60px;}
 	.layout2 .block.sap-sec .lnk_default {line-height: 45px;height: 45px;}
 	.service_details {margin-bottom: 40px;}
 	.serices_sec {padding-bottom: 50px 0 10px;}
@@ -1053,7 +1053,7 @@
 	.srvs_slider.active {padding-bottom: 0;}
 	.layout2 .block.service-block {padding-bottom: 30px;}
 	.layout2 .services_slider .slick-dots {bottom: 0;}
-	.btm_bg {display: block;}
+	
 	.layout2 .block.less-gap.rem_pb_0 {padding-bottom: 0;}
 	.sep-text > h2 {font-size: 26px;line-height: 32px;padding-right: 20px;margin-bottom: 18px;}
 	.layout2 .block.sap-sec .lnk_default {height: 40px;line-height: 42px;padding: 0 30px;}
