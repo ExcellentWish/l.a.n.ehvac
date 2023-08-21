@@ -5170,3 +5170,11 @@ form label.error {
     padding-top: 110px;
   }
 }
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .menu_btn { display: inline-block; }  /* show it on small screens */
+}
+
+@media screen and (min-width: 401px) and (max-width: 1200px) {
+  .menu_btn  { display: none; }   /* hide it elsewhere */
+}
