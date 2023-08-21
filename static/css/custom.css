@@ -1566,7 +1566,9 @@ body.layout2 {
 
 /* ====================== ADDITIONAL SERVICES =================== */
 
-
+#addSvr{
+  padding-bottom: 470px;
+}
 .fixed-bg {
   position: absolute;
   top: 0;
@@ -4058,6 +4060,7 @@ blockquote:before {
 
 /* ========================== SERVICES SIGNEL PAGE =========================== */
 
+
 .side_bar .tabs_list {
   -webkit-box-shadow: inherit;
   -moz-box-shadow: inherit;
@@ -4514,7 +4517,12 @@ blockquote:before {
 
 
 
-
+.reviewPop {
+  display: inline-block;
+  position: fixed;
+  bottom: 150px;
+  right: 50px;
+}
 
 
 .popup_form {
